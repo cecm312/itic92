@@ -1,0 +1,19 @@
+.divbutton{
+    cursor: pointer;
+}
+
+.divbutton:hover{
+    -o-box-shadow: 1px 1px 10px #CCC;
+    -webkit-box-shadow: 1px 1px 10px #CCC;
+    -moz-box-shadow: 1px 1px 10px #CCC;
+}
+
+.divbutton:active{
+    -o-box-shadow: 1px 1px 10px #01DF3A;
+    -webkit-box-shadow: 1px 1px 10px #01DF3A;
+    -moz-box-shadow: 1px 1px 10px #01DF3A;
+}
+
+.hidden{
+    display:none;
+}
