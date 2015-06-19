@@ -23,6 +23,7 @@ if (isset($_FILES["fileFoto"])) {
     <head>
         <link href="assets/materialize/css/materialize.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/animate/animate.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/sweetalert/sweetalert.css" rel="stylesheet" type="text/css"/>
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
         <title>Registro Realizado</title>
         <meta charset="UTF-8">
@@ -76,6 +77,7 @@ if (isset($_FILES["fileFoto"])) {
         </div>
         <script src="assets/jquery/jquery-2.1.4.js" type="text/javascript"></script>
         <script src="assets/materialize/js/materialize.min.js" type="text/javascript"></script>
+        <script src="assets/sweetalert/sweetalert.min.js" type="text/javascript"></script>
         <script src="js/saveAspirante.js" type="text/javascript"></script>   
     </body>
 </html>
