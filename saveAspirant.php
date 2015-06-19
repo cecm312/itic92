@@ -30,54 +30,52 @@ if (isset($_FILES["fileFoto"])) {
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <h2>Universidad Tecnologica</h>
-                    <h3>Registro Finalizado</h3>
+            <div class="row divPrint">
+                <h3>Universidad Tecnologica</h3>
+                    <h4>Registro Finalizado</h4>
                     <div class="col s12 m3 l3">            
                         <img class="responsive-img" src="<?= $aspirantPicture ?>">
                     </div>
                     <div class="col s12 m9 l9">
                         <div class="row">
                             <div class="col s12 m12 l12">
-                                <h4>Nombre</h4>
-                                <p class="flow-text"><?= $name ?></p>
+                                <h5>Nombre</h5>
+                                <p ><?= $name ?></p>
                             </div>
                             <div class="col s6 m6 l6">
-                                <h4>Correo</h4>
-                                <p class="flow-text"><?= $email ?></p>
+                                <h5>Correo</h5>
+                                <p ><?= $email ?></p>
                             </div>
                             <div class="col s6 m6 l6">
-                                <h4>Sexo</h4>
-                                <p class="flow-text"><?= $sex ?></p>
+                                <h5>Sexo</h5>
+                                <p ><?= $sex ?></p>
                             </div>
                             <div class="col s6 m6 l6">
-                                <h4>Telefono</h4>
-                                <p class="flow-text"><?= $telephone ?></p>
+                                <h5>Telefono</h5>
+                                <p ><?= $telephone ?></p>
                             </div>
                             <div class="col s6 m6 l6">
-                                <h4>Celular</h4>
-                                <p class="flow-text"><?= $cellular ?></p>
+                                <h5>Celular</h5>
+                                <p ><?= $cellular ?></p>
                             </div>
                             <div class="col s12 m12 l12">
-                                <h4>Carrera</h4>
-                                <p class="flow-text"><?= $career ?></p>
+                                <h5>Carrera</h5>
+                                <p ><?= $career ?></p>
                             </div>
                             <div class="col s12 m12 l12">
-                                <h4>Observaciones</h4>
-                                <p class="flow-text"><?= $observations ?></p>
+                                <h5>Observaciones</h5>
+                                <p ><?= $observations ?></p>
                             </div>
                             <div class="col s12 m12 l12">
-                                <a class="waves-effect waves-light btn"><i class="mdi-action-print left"></i>Imprimir</a>
+                                <a class="waves-effect waves-light btn btnPrint"><i class="mdi-action-print left"></i>Imprimir</a>
                                 <a href="index.html" class="waves-effect waves-light btn"><i class="mdi-action-exit-to-app right"></i>Salir</a>
                             </div>
                         </div>
-
-
                     </div>
-
             </div>
         </div>
         <script src="assets/jquery/jquery-2.1.4.js" type="text/javascript"></script>
-        <script src="assets/materialize/js/materialize.min.js" type="text/javascript"></script>  
+        <script src="assets/materialize/js/materialize.min.js" type="text/javascript"></script>
+        <script src="js/saveAspirante.js" type="text/javascript"></script>   
     </body>
 </html>
