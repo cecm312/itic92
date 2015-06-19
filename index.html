@@ -9,50 +9,70 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     </head>
     <body>
-        <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input id="nombre" type="text" class="validate">
-                        <label for="nombre">Imagen</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="nombre" type="text" class="validate">
-                        <label for="nombre">Nombre</label>
-                    </div>
-                       <div class="input-field col s6">
-                        <input id="nombre" type="text" class="validate">
-                        <label for="nombre">Correo</label>
-                    </div>
-                     <div class="input-field col s6">
-                        <input id="nombre" type="text" class="validate">
-                        <label for="nombre">Sexo</label>
-                    </div>
-                     <div class="input-field col s6">
-                        <input id="nombre" type="text" class="validate">
-                        <label for="nombre">Telefono</label>
-                    </div>
-                     <div class="input-field col s6">
-                        <input id="nombre" type="text" class="validate">
-                        <label for="nombre">Celular</label>
-                    </div>
-                     <div class="input-field col s6">
-                        <input id="nombre" type="text" class="validate">
-                        <label for="nombre">Carrera</label>
-                    </div>
-                     <div class="input-field col s6">
-                        <input id="nombre" type="text" class="validate">
-                        <label for="nombre">Observaciones</label>
-                    </div>
-                </div>  
-            </form>
+        <div class="container">
+            <div class="row">
+                <h1>Registros de Aspirantes</h1>
+                <form class="col s12" action="saveAspirant.php" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="input-field col s12 m8 l8">
+                            <input id="txtName" name="txtName" type="text" class="validate">
+                            <label for="txtName">Nombre</label>
+                        </div>
+                        <div class="file-field input-field col s12 m4 l4">
+                            <input class="file-path validate" type="text"/>
+                            <div class="btn">
+                                <span>Foto</span>
+                                <input type="file" name="fileFoto" accept="image/*"/>
+                            </div>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <input id="txtCorreo" type="email" name="txtEmail" class="validate">
+                            <label for="txtCorreo">Correo</label>
+                        </div>                        
+                        <div class="input-field col s12 m6 l6">
+                            <select id="selSex" name="selSex">
+                                <option value="" disabled selected>Selecciona tu sexo</option>
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                            </select>
+                            <label for="selSex">Sexo</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <input id="txtTelefono" name="txtTel" type="tel" class="validate">
+                            <label for="txtTelefono">Telefono</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <input id="txtCel" name="txtCel" type="tel" class="validate">
+                            <label for="txtCel">Celular</label>
+                        </div>
+                        <div class="input-field col s12 m12 l12">
+                            <select id="selCar" name="selCar">
+                                <option value="" disabled selected>Selecciona tu carrera</option>
+                                <option>Tecnologias de la informacion y telecomunicaciones</option>
+                                <option>Gastronomia</option>
+                                <option>Administracion</option>
+                                <option>Turismo</option>
+                                <option>Contaduria</option>
+                            </select>
+                            <label for="selCar">Carrera</label>
+                        </div>
+                        <div class="input-field col s12 m12 l12">
+                            <textarea id="txtObs" class="materialize-textarea" name="txtObs"></textarea>
+                            <label for="txtObs">Observaciones</label>
+                        </div>
+                        <div class="input-field col s12 m12 l12">
+                            <button class="btn waves-effect waves-light" type="submit">Registrar
+                                <i class="mdi-content-send right"></i>
+                            </button>
+                        </div>
+                    </div>  
+                </form>
+            </div>
         </div>
-        
-        
+
+
         <script src="assets/jquery/jquery-2.1.4.js" type="text/javascript"></script>
         <script src="assets/materialize/js/materialize.min.js" type="text/javascript"></script>
-
-        <script src="js/index.js" type="text/javascript"></script>
-        <script src="js/datafile.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>     
     </body>
 </html>

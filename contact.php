@@ -5,7 +5,7 @@
     <body>
         <h1>Contacto</h1>
         <div>
-            <form action="saveContact.php" method="post" name="frm_contact" id="frm_contact">
+            <form action="saveContact.php" method="post" name="frm_contact" id="frm_contact" >
                 <div class="groupFrm">
                     <label>Nombre:</label>
                     <input type="text" name="txtName" value="" placeholder="Ingrese su nombre"/>
