@@ -1,11 +1,13 @@
 <?php
-$name = $_REQUEST["txtName"];
-$email = $_REQUEST["txtEmail"];
-$sex = $_REQUEST["selSex"];
-$telephone = $_REQUEST["txtTel"];
-$cellular = $_REQUEST["txtCel"];
-$career = $_REQUEST["selCar"];
-$observations = $_REQUEST["txtObs"];
+$name = $_POST["txtName"];
+$email = $_POST["txtEmail"];
+$sex = $_POST["selSex"];
+$telephone = $_POST["txtTel"];
+$cellular = $_POST["txtCel"];
+$career = $_POST["selCar"];
+$observations = $_POST["txtObs"];
+
+var_dump($_FILES);
 
 $target_dir = "uploads/";
 $aspirantPicture = $target_dir . "default.jpg";
@@ -18,6 +20,7 @@ if (isset($_FILES["fileFoto"])) {
         $aspirantPicture = $target_file;
     }
 }
+
 ?>
 <html>
     <head>
@@ -78,6 +81,19 @@ if (isset($_FILES["fileFoto"])) {
         <script src="assets/jquery/jquery-2.1.4.js" type="text/javascript"></script>
         <script src="assets/materialize/js/materialize.min.js" type="text/javascript"></script>
         <script src="assets/sweetalert/sweetalert.min.js" type="text/javascript"></script>
-        <script src="js/saveAspirante.js" type="text/javascript"></script>   
+        <script src="js/saveAspirante.js" type="text/javascript"></script>
+        <script>
+            var data={
+                name : "<?=$name?>",
+                email : "<?=$email?>",
+                sex : "<?=$sex?>",
+                telephone : "<?=$telephone?>",
+                cellular : "<?=$cellular?>",
+                career : "<?=$career?>",
+                observations : "<?=$observations?>",
+                aspirantPicture : "<?=$aspirantPicture?>",
+            }
+            console.log(data);
+        </script>
     </body>
 </html>
